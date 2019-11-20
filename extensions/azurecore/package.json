@@ -59,6 +59,14 @@
       }
     ],
     "commands": [
+
+      {
+        "command": "azure.resource.login",
+        "title": "Azure:",
+        "category": "Signin Test 1"
+      },
+
+
       {
         "command": "accounts.clearTokenCache",
         "title": "%accounts.clearTokenCache%",
@@ -181,7 +189,16 @@
     "@azure/arm-subscriptions": "1.0.0",
     "adal-node": "^0.1.28",
     "request": "2.88.0",
-    "vscode-nls": "^4.0.0"
+    "vscode-nls": "^4.0.0",
+
+    "azure-arm-resource": "7.0.1",
+    "form-data": "2.3.3",
+    "http-proxy-agent": "2.1.0",
+    "https-proxy-agent": "2.2.3",
+    "request-promise": "4.2.2",
+    "semver": "5.6.0",
+    "vscode-extension-telemetry": "0.1.0",
+    "ws": "6.1.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
@@ -192,6 +209,18 @@
     "mocha-multi-reporters": "^1.1.7",
     "should": "^13.2.1",
     "typemoq": "^2.1.0",
-    "vscode": "1.1.26"
+
+    "@types/form-data": "2.2.1",
+    "@types/http-proxy-agent": "2.0.1",
+    "@types/keytar": "4.0.1",
+    "@types/request-promise": "4.1.42",
+    "@types/semver": "5.5.0",
+    "@types/ws": "6.0.1",
+    "rimraf": "2.6.2",
+    "ts-loader": "5.3.0",
+    "typescript": "3.3.4000",
+    "vscode": "^1.1.36",
+    "webpack": "4.25.1",
+    "webpack-cli": "3.1.2"
   }
 }
