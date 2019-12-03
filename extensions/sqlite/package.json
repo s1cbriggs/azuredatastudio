@@ -1,0 +1,66 @@
+{
+  "name": "sqlite",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "publisher": "microsoft",
+  "version": "1.0.0",
+  "main": "out/index",
+  "engines": {
+    "vscode": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anthonydresser",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/sqlite3": "^3.1.5",
+    "@types/vscode": "^1.40.0",
+    "azdata": "^1.0.0"
+  },
+  "dependencies": {
+    "sqlite3": "^4.1.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "sqlite.createFile",
+        "title": "%sqlite.createFile%"
+      }
+    ],
+    "connectionProvider": {
+      "providerId": "SQLITE",
+      "displayName": "%provider.displayName%",
+      "connectionOptions": [
+        {
+          "specialValueType": "serverName",
+          "isIdentity": true,
+          "name": "file",
+          "displayName": "%mssql.connectionOptions.serverName.displayName%",
+          "description": "%mssql.connectionOptions.serverName.description%",
+          "groupName": "Source",
+          "valueType": "string",
+          "defaultValue": null,
+          "objectType": null,
+          "categoryValues": null,
+          "isRequired": true,
+          "isArray": false
+        },
+        {
+          "specialValueType": "databaseName",
+          "isIdentity": true,
+          "name": "database",
+          "displayName": "%mssql.connectionOptions.databaseName.displayName%",
+          "description": "%mssql.connectionOptions.databaseName.description%",
+          "groupName": "Source",
+          "valueType": "string",
+          "defaultValue": null,
+          "objectType": null,
+          "categoryValues": null,
+          "isRequired": false,
+          "isArray": false
+        }
+      ]
+    }
+  }
+}
